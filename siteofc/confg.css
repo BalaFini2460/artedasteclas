@@ -1,0 +1,186 @@
+/* configurações para tela de computador */
+* {
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(pianocomp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    margin-top: 5px;
+}
+
+.logo {
+    flex: 5%;
+    /* percentual de adaptação da caixinha*/
+    /* largura = 300px */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slogan {
+    flex: 50%;
+    /* percentual de adaptação da caixinha*/
+    /* largura = 750px */
+    font-family: "Ingrid Darling", cursive;
+    font-size: 64px;
+    color: white;
+    text-shadow:
+        2px 2px 0px black,
+        /* sombra direita-inferior */
+        -2px 2px 0px black,
+        /* sombra esquerda-inferior */
+        2px -2px 0px black,
+        /* sombra direita-superior */
+        -2px -2px 0px black;
+    /* sombra esquerda-superior */
+    
+}
+
+.menu{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    margin: 0px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.links{
+    display: none;
+    flex-direction: column;
+    position: relative;
+    width: 150px;
+    margin: 0px;
+    padding: 10px 20px;
+    text-align: left;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+ .links a{
+     text-decoration: none;
+     color: white;
+     font-family: arial;
+     font-size: 16px;
+     width: 100%;
+     padding: 5px 10px;
+     box-sizing: border-box;
+
+ }
+
+ .links a:hover{
+     background-color: gray;
+     color: white;
+     border-radius: 10px;
+     
+ }
+
+
+main {
+    width: 1000px;
+    height: 570px;
+}
+
+.caixona {
+    display: flex;
+    font-size: 40px;
+    font-family: "Oleo Script Swash Caps", system-ui;
+    color: white;
+    flex-direction: column;
+    float: left;
+    margin-top: 45px;
+    margin-left: 5px;
+   
+}
+
+.caixinha1,
+.caixinha2 {
+   margin-bottom: 100px;
+}
+
+.caixinha1:hover{
+    color: gray;
+}
+
+.caixinha2:hover{
+    color: gray;
+}
+
+.caixinha3:hover{
+    color: gray;
+}
+
+footer {
+    width: 1000px;
+    height: 30px;
+    font-size: 24px;
+    font-family: "Life Savers", serif;
+    display: flex;
+}
+
+
+/* configurações para tela de celular */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        background-image: url(pianocel.png);
+    }
+
+    header{
+        width: 400px;
+        height: 300px;
+        flex-direction: column;
+    }
+    
+    .logo{
+      margin-left: 10px;
+      flex: 5%;
+    }
+
+    .logo img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .slogan{
+        font-size: 90px;
+        margin-left: 40px;
+    }
+
+    main{
+        width: 400px;
+        height: 550px;
+        font-size: 30px;
+    }
+
+    .caixinha1{
+        margin-left: 5px;
+    }
+
+    .caixinha2{
+        margin-left: 70px;
+    }
+
+    .caixinha3{
+        margin-left: 100px;
+    }
+
+    footer{
+        width: 100%;
+        height: 30px;
+        font-size: 16px;
+        color: white;
+        font-family: "Oleo Script Swash Caps", system-ui;
+    }
+
+}
